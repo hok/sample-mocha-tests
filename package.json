@@ -1,0 +1,21 @@
+{
+  "name": "sample_tests",
+  "version": "0.1.0",
+  "description": "Sample mocha tests",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "test": "npx mocha --require @babel/register",
+    "test:success": "npx mocha --require @babel/register test/success_spec.js",
+    "test:failure": "npx mocha --require @babel/register test/failing_spec.js"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "@babel/core": "^7.4.5",
+    "@babel/preset-env": "^7.4.5",
+    "@babel/register": "^7.4.4",
+    "chai": "^4.2.0",
+    "eslint": "^5.16.0",
+    "mocha": "^6.1.4"
+  }
+}
